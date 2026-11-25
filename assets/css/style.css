@@ -6,7 +6,7 @@
    Sommaire (chercher le titre entre « ---------- ») :
      Polices · Variables :root (couleurs, largeurs) · En-tête · Le fil rouge
      · Accueil · Sections · Projets · Réalisations · Formation · Services
-     · Contact · Pied de page · Version 5.0 (compléments rangés par composant :
+     · Contact · Pied de page · Compléments (rangés par composant :
      Compétences, Projets, Sites en ligne, blocs « Voir plus », Formulaire…)
      · Tablette · Menu repliable · Mobile
    Changer une couleur : modifier la variable dans :root (--banco, --sable, --fil…).
@@ -560,7 +560,7 @@ main { position: relative; display: block; }
 .site-footer a.site-footer__top { color: var(--sable); }
 
 /* ==========================================================================
-   Version 5.0
+   Compléments
    ========================================================================== */
 
 /* En-tête : le bouton projet n'apparaît que dans le menu replié */

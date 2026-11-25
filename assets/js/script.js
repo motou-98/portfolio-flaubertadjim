@@ -1,4 +1,4 @@
-/* Portfolio Allah-adjim Flaubert — interactions (v5.0)
+/* Portfolio Allah-adjim Flaubert — interactions (version 1.0)
    1. Menu replié accessible (Échap, piège de focus, verrouillage du défilement)
    2. Apparitions au défilement (préparées avant toute mesure)
    3. Fil rouge : progression de lecture et section active (mesures en cache)

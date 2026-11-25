@@ -1,4 +1,4 @@
-"""Tests automatisés du portfolio (v5.0).
+"""Tests automatisés du portfolio (version 1.0).
 
 Usage :
     pip install playwright && playwright install chromium

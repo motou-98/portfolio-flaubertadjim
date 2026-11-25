@@ -164,7 +164,7 @@ Le script contrôle, sans rien modifier :
 4. que chaque lien interne, image et ancre existe, avec les bonnes majuscules, et que chaque image a un texte alternatif et des dimensions ;
 5. qu'aucun style, script ou fichier externe ne sera bloqué par la sécurité du site ;
 6. que les données pour Google, le manifeste et le sitemap sont valides ;
-7. qu'aucun fichier de travail (dossier « Claude outputs », archives .zip…) ne traîne dans le dossier.
+7. qu'aucun fichier de travail (archives .zip, sauvegardes .bak, fichiers système de Windows…) ne traîne dans le dossier.
 
 Chaque ligne commence par `[OK]`, `[ATTENTION]` (à relire) ou `[ERREUR]` (à corriger avant de publier). Option `--corriger` : met à jour les tailles du CV et les dates de dernière modification (sitemap et données pour Google).
 

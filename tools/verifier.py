@@ -27,7 +27,7 @@ RACINE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PAGES = ["index.html", "404.html"]
 
 # Fichiers et dossiers qui ne doivent pas partir en ligne.
-INTERDITS = ["Claude outputs", ".env", "Thumbs.db", "desktop.ini", ".DS_Store"]
+INTERDITS = [".env", "Thumbs.db", "desktop.ini", ".DS_Store"]
 # Dossiers utiles en local mais à garder hors du dépôt public (voir MAINTENANCE.md).
 PRIVES = ["documentation"]
 

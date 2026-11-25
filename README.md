@@ -1,4 +1,4 @@
-# Portfolio · Allah-adjim Flaubert — version 5.0
+# Portfolio · Allah-adjim Flaubert — version 1.0
 
 Portfolio professionnel d'Allah-adjim Flaubert, à N'Djaména (Tchad) : **solutions numériques, gestion de projets et données**.
 
@@ -39,7 +39,7 @@ robots.txt, sitemap.xml référencement
 _headers                en-têtes de sécurité pour Netlify ou Cloudflare Pages (ignoré par GitHub Pages)
 .nojekyll               désactive Jekyll sur GitHub Pages
 assets/
-  css/style.css         styles (variables en tête, bloc « Version 5.0 » pour les ajouts)
+  css/style.css         styles (variables en tête, bloc « Compléments » rangé par composant)
   js/script.js          menu, apparitions, fil rouge, copie de l'e-mail, formulaire
   fonts/                polices woff2 et licences
   images/               portrait (340 à 663 px, webp et jpg), icônes, image de partage
@@ -85,7 +85,7 @@ Le dossier `documentation/` reste sur l'ordinateur de l'auteur : il est exclu du
 
 | Fichier | Contenu |
 | --- | --- |
-| [01-audit-technique.md](documentation/01-audit-technique.md) | Diagnostic de la version 4.7 |
+| [01-audit-technique.md](documentation/01-audit-technique.md) | Diagnostic de l'ancien site, avant la refonte |
 | [02-ameliorations.md](documentation/02-ameliorations.md) | Plan et améliorations réalisées, mesures avant/après |
 | [03-cv-et-documents.md](documentation/03-cv-et-documents.md) | Écarts entre le CV et le site, propositions |
 | [04-informations-a-valider.md](documentation/04-informations-a-valider.md) | Informations à confirmer ou à fournir |

@@ -1,6 +1,5 @@
 # Fichiers à ne pas publier avec le site (Git et GitHub Desktop en tiennent compte,
 # pas l'envoi par glisser-déposer sur github.com).
-Claude outputs/
 Thumbs.db
 desktop.ini
 .DS_Store
