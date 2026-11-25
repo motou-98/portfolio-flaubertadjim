@@ -1,0 +1,8 @@
+# Attention : sur GitHub Pages, ce fichier n'est lu par les moteurs que s'il se trouve
+# à la racine du domaine (domaine personnel ou dépôt motou-98.github.io).
+# Voir documentation/06-deploiement.md.
+User-agent: *
+Allow: /
+Disallow: /documentation/
+
+Sitemap: https://motou-98.github.io/portfolio-flaubertadjim/sitemap.xml

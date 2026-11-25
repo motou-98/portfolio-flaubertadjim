@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="fr" class="no-js">
+<!--
+  Portfolio d'Allah-adjim Flaubert. Mode d'emploi : MAINTENANCE.md.
+  Avant chaque publication : python tools/verifier.py
+-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; font-src 'self'; connect-src 'none'; manifest-src 'self'; frame-src 'none'; worker-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <!-- RÉFÉRENCEMENT. L'adresse du site figure ici (canonical, partage, JSON-LD),
+       dans sitemap.xml, robots.txt et 404.html. Pour la changer partout :
+       python tools/verifier.py --changer-adresse https://nouvelle-adresse/ -->
+  <title>Allah-adjim Flaubert | Solutions numériques et données au Tchad</title>
+  <meta name="description" content="Allah-adjim Flaubert, développeur web et chargé de programme à N'Djaména : applications web Laravel, gestion de projets numériques, collecte et analyse de données (KoboToolbox, Power BI) et services informatiques au Tchad.">
+  <meta name="author" content="Allah-adjim Flaubert">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#112f57">
+  <link rel="canonical" href="https://motou-98.github.io/portfolio-flaubertadjim/">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Allah-adjim Flaubert">
+  <meta property="og:title" content="Allah-adjim Flaubert | Solutions numériques et données au Tchad">
+  <meta property="og:description" content="Développement d'applications web, gestion de projets numériques, collecte et analyse de données à N'Djaména.">
+  <meta property="og:url" content="https://motou-98.github.io/portfolio-flaubertadjim/">
+  <meta property="og:image" content="https://motou-98.github.io/portfolio-flaubertadjim/assets/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Allah-adjim Flaubert, solutions numériques, gestion de projets et données">
+  <meta property="profile:first_name" content="Flaubert">
+  <meta property="profile:last_name" content="Allah-adjim">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Allah-adjim Flaubert | Solutions numériques et données au Tchad">
+  <meta name="twitter:description" content="Développement d'applications web, gestion de projets numériques, collecte et analyse de données à N'Djaména.">
+  <meta name="twitter:image" content="https://motou-98.github.io/portfolio-flaubertadjim/assets/images/og-image.jpg">
+  <meta name="twitter:image:alt" content="Allah-adjim Flaubert, solutions numériques, gestion de projets et données">
+
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preload" href="assets/fonts/poppins-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/script.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://motou-98.github.io/portfolio-flaubertadjim/#site",
+        "url": "https://motou-98.github.io/portfolio-flaubertadjim/",
+        "name": "Allah-adjim Flaubert",
+        "inLanguage": "fr"
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": "https://motou-98.github.io/portfolio-flaubertadjim/#page",
+        "url": "https://motou-98.github.io/portfolio-flaubertadjim/",
+        "name": "Allah-adjim Flaubert | Solutions numériques et données au Tchad",
+        "inLanguage": "fr",
+        "isPartOf": { "@id": "https://motou-98.github.io/portfolio-flaubertadjim/#site" },
+        "mainEntity": { "@id": "https://motou-98.github.io/portfolio-flaubertadjim/#person" },
+        "dateModified": "2026-11-25"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://motou-98.github.io/portfolio-flaubertadjim/#person",
+        "name": "Allah-adjim Flaubert",
+        "jobTitle": "Chargé de programme et développement numérique",
+        "description": "Développement de solutions numériques, gestion de projets, collecte et analyse de données à N'Djaména, Tchad.",
+        "worksFor": { "@type": "Organization", "name": "DAK-VISION PLUS", "url": "https://dakvisionplus.com" },
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "Université de N'Djamena" },
+        "hasCredential": { "@type": "EducationalOccupationalCredential", "name": "Diplôme d'ingénieur des travaux en informatique appliquée (Bac+3)", "credentialCategory": "degree" },
+        "address": { "@type": "PostalAddress", "addressLocality": "N'Djaména", "addressCountry": "TD" },
+        "email": "mailto:flaubertallah@gmail.com",
+        "telephone": "+235 63 45 92 98",
+        "url": "https://motou-98.github.io/portfolio-flaubertadjim/",
+        "image": "https://motou-98.github.io/portfolio-flaubertadjim/assets/images/portrait-663.jpg",
+        "sameAs": ["https://github.com/motou-98"],
+        "knowsLanguage": ["fr", "ar"],
+        "knowsAbout": ["Développement web", "Laravel", "Livewire", "Kotlin", "Jetpack Compose", "Applications Android", "WordPress", "JavaScript", "Tailwind CSS", "Gestion de projets numériques", "KoboToolbox", "Collecte de données", "Analyse de données", "Power BI", "Formation", "Maintenance informatique", "Vidéosurveillance"]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="site-header">
+    <div class="page site-header__inner">
+      <a class="wordmark" href="#accueil">Allah-adjim Flaubert</a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+      <nav class="nav" id="menu" aria-label="Navigation principale">
+        <ul class="nav__list">
+          <li><a href="#profil">Profil</a></li>
+          <li><a href="#competences">Compétences</a></li>
+          <li><a href="#projets">Projets</a></li>
+          <li><a href="#realisations">Réalisations</a></li>
+          <li><a href="#parcours">Parcours</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav__actions">
+          <a class="button button--solid nav__project" href="#projet">Discuter d'un projet</a>
+          <a class="nav__cv" href="assets/documents/CV_ALLAH-ADJIM_Flaubert.pdf" download>CV en PDF</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu" tabindex="-1">
+    <div class="fil" aria-hidden="true"><span class="fil__fill"></span></div>
+
+    <!-- ═══ ACCUEIL ═══ Nom, accroche, poste actuel, boutons et lien du CV (taille en ko :
+         python tools/verifier.py --corriger la met à jour). Les trois piliers renvoient vers Compétences. -->
+    <section class="hero" id="accueil" aria-labelledby="nom">
+      <div class="page hero__grid">
+        <figure class="hero__photo">
+          <picture>
+            <source type="image/webp" srcset="assets/images/portrait-340.webp 340w, assets/images/portrait-440.webp 440w, assets/images/portrait-520.webp 520w, assets/images/portrait-663.webp 663w" sizes="(max-width: 820px) min(64vw, 340px), 30vw">
+            <img src="assets/images/portrait-663.jpg" srcset="assets/images/portrait-340.jpg 340w, assets/images/portrait-440.jpg 440w, assets/images/portrait-520.jpg 520w, assets/images/portrait-663.jpg 663w" sizes="(max-width: 820px) min(64vw, 340px), 30vw" width="663" height="1080" alt="Portrait d'Allah-adjim Flaubert en chemise blanche à liseré rouge, à N'Djaména." fetchpriority="high">
+          </picture>
+          <figcaption class="hero__caption">N'Djaména, Tchad</figcaption>
+        </figure>
+
+        <div class="hero__text">
+          <h1 class="hero__name" id="nom"><span>Allah-adjim</span> <span>Flaubert</span></h1>
+          <div class="hero__body">
+            <p class="hero__role">Solutions numériques, gestion de projets et données.</p>
+            <p class="hero__intro">Je conçois et développe des applications web, je coordonne des projets numériques et je mets en place des collectes de données fiables, du formulaire KoboToolbox jusqu'au rapport d'analyse.</p>
+            <p class="hero__current">Chargé de programme et développement numérique chez DAK-VISION PLUS.</p>
+            <div class="hero__actions">
+              <a class="button button--solid" href="#projets">Découvrir mes projets</a>
+              <a class="button" href="#projet">Discuter d'un projet</a>
+            </div>
+            <a class="hero__cv" href="assets/documents/CV_ALLAH-ADJIM_Flaubert.pdf" download>Télécharger mon CV <span class="file-size">(PDF, 75 ko)</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="page pillars-wrap">
+        <ul class="pillars" aria-label="Trois domaines principaux">
+          <li class="pillar">
+            <a href="#competences-dev">
+              <span class="pillar__title">Développement de solutions numériques</span>
+              <span class="pillar__text">Applications web Laravel, application Android Kotlin, sites WordPress</span>
+            </a>
+          </li>
+          <li class="pillar">
+            <a href="#competences-projets">
+              <span class="pillar__title">Gestion de projets</span>
+              <span class="pillar__text">Programmes de formation, coordination de projets numériques</span>
+            </a>
+          </li>
+          <li class="pillar">
+            <a href="#competences-donnees">
+              <span class="pillar__title">Collecte et analyse de données</span>
+              <span class="pillar__text">KoboToolbox, KoboCollect, Excel, Power BI</span>
+            </a>
+          </li>
+        </ul>
+        <a class="scroll-cue" href="#profil"><span class="scroll-cue__line" aria-hidden="true"></span>Découvrir mon parcours</a>
+      </div>
+    </section>
+
+    <!-- ═══ PROFIL ═══ Paragraphe visible, puis le parcours détaillé dans <details> (replié). -->
+    <section class="section" id="profil" aria-labelledby="profil-titre">
+      <div class="page section__grid">
+        <span class="section__mark" aria-hidden="true"></span>
+        <h2 class="section__title" id="profil-titre">Profil</h2>
+        <div class="section__content">
+          <p class="statement">Du formulaire d'enquête à l'application web, j'interviens là où le numérique doit répondre à un besoin concret.</p>
+
+          <div class="profile">
+            <div class="prose">
+              <p>Mon profil réunit trois savoir-faire qui se renforcent : développer la solution, piloter le projet et exploiter les données qu'il produit. En complément, j'assure la formation des utilisateurs, la maintenance informatique et l'installation de vidéosurveillance. En parallèle, je porte mes propres projets : DJAOU, JANJAN et ADJIM INNOV.</p>
+              <details class="project__more more">
+  <summary>Lire mon parcours en détail</summary>
+  <div class="more__body">
+<p>Ingénieur des travaux en informatique appliquée, diplômé de l'Université de N'Djamena, j'ai commencé par un stage au département informatique de la FSEA, où j'ai collecté les données des enseignants et participé à la conception du site de la faculté.</p>
+<p>J'ai ensuite rejoint DAK-VISION PLUS, une agence digitale de N'Djaména, comme assistant développeur web et maintenance. J'y suis aujourd'hui chargé de programme et développement numérique : j'élabore les programmes de formation de l'agence, je coordonne ses projets numériques et je développe des sites et des applications web. Depuis mars 2026, je forme également à la collecte de données avec KoboToolbox et KoboCollect.</p>
+  </div>
+</details>
+            </div>
+
+            <dl class="facts">
+              <div><dt>Poste actuel</dt><dd>Chargé de programme et développement numérique, DAK-VISION PLUS</dd></div>
+              <div><dt>Formation</dt><dd>Ingénieur des travaux en informatique appliquée (Bac+3)</dd></div>
+              <div><dt>Basé à</dt><dd>N'Djaména, Tchad</dd></div>
+              <div><dt>Langues de travail</dt><dd>Français, arabe local</dd></div>
+              <div><dt>Façon de travailler</dt><dd>Rigoureux, autonome, à l'aise sur le terrain</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ COMPÉTENCES ═══ Trois domaines (<article class="domain">), puis les expertises
+         complémentaires (<article class="extra">). Une technologie = un <li> dans <ul class="tags">. -->
+    <section class="section" id="competences" aria-labelledby="competences-titre">
+      <div class="page section__grid">
+        <span class="section__mark" aria-hidden="true"></span>
+        <h2 class="section__title" id="competences-titre">Compétences</h2>
+        <div class="section__content">
+          <p class="lede">Trois domaines principaux, complétés par des expertises de terrain. Les outils cités sont ceux que j'utilise réellement, en mission chez DAK-VISION PLUS ou dans mes propres projets.</p>
+
+          <div class="domains">
+            <article class="domain" id="competences-dev">
+              <div class="domain__head">
+                <h3>Développement de solutions numériques</h3>
+                <p class="domain__need">Une organisation a besoin d'un site, d'une application ou d'un outil de gestion.</p>
+              </div>
+              <div class="domain__body">
+                <p>Applications web sur mesure avec Laravel (plateforme de gestion interne conçue et développée seul, plateforme de moto-taxi), application Android native en Kotlin, sites WordPress. Interfaces en HTML, CSS, JavaScript, Tailwind CSS ou Bootstrap, bases de données MySQL, tests automatisés. J'ai aussi développé les sites de Service Agro Almountas, DAK-VISION PLUS et Nour Tchad Services, et j'y ai apporté les correctifs.</p>
+                <div class="skills"><p class="skills__label">Back-end</p><ul class="tags"><li>Laravel</li><li>Blade</li><li>Livewire</li><li>PHP</li><li>MySQL</li><li>WordPress</li><li>Laravel Sanctum et Fortify</li><li>Laravel Reverb (temps réel)</li><li>PHPUnit (tests)</li></ul></div>
+                <details class="project__more more">
+  <summary>Voir toutes les technologies (front-end, mobile, supports visuels)</summary>
+  <div class="more__body">
+<div class="skills"><p class="skills__label">Front-end</p><ul class="tags tags--detailed"><li><span class="tag__name">HTML5</span><span class="tag__desc">Structure des pages</span></li><li><span class="tag__name">CSS3</span><span class="tag__desc">Mise en forme</span></li><li><span class="tag__name">JavaScript</span><span class="tag__desc">Interactivité</span></li><li><span class="tag__name">Tailwind CSS</span><span class="tag__desc">Design rapide et responsive</span></li><li><span class="tag__name">Bootstrap</span><span class="tag__desc">Composants et mise en page</span></li><li><span class="tag__name">Vite</span><span class="tag__desc">Compilation et gestion des ressources</span></li><li><span class="tag__name">Chart.js</span><span class="tag__desc">Graphiques et statistiques</span></li><li><span class="tag__name">Alpine.js</span><span class="tag__desc">Interactions légères</span></li></ul></div>
+<div class="skills"><p class="skills__label">Mobile Android</p><ul class="tags"><li>Kotlin</li><li>Jetpack Compose</li><li>Material 3</li><li>Room et SQLCipher</li><li>WorkManager</li></ul></div>
+<div class="skills"><p class="skills__label">Supports visuels</p><ul class="tags"><li>Canva</li><li>PixelLab</li><li>Illustrator</li></ul></div>
+  </div>
+</details>
+              </div>
+            </article>
+
+            <article class="domain" id="competences-projets">
+              <div class="domain__head">
+                <h3>Gestion et coordination de projets</h3>
+                <p class="domain__need">Un projet numérique doit avancer, avec des étapes claires et des équipes formées.</p>
+              </div>
+              <div class="domain__body">
+                <p>Chez DAK-VISION PLUS, j'élabore les programmes de formation de l'agence et je coordonne ses projets numériques. J'ai aussi mené de bout en bout une enquête socioéconomique auprès des ménages, de la conception du questionnaire à l'analyse.</p>
+                <div class="skills"><p class="skills__label">Savoir-faire</p><ul class="tags"><li>Élaboration de programmes de formation</li><li>Coordination de projets numériques</li><li>Conduite d'enquêtes de terrain</li><li>Rédaction de rapports</li></ul></div>
+              </div>
+            </article>
+
+            <article class="domain" id="competences-donnees">
+              <div class="domain__head">
+                <h3>Collecte et analyse de données</h3>
+                <p class="domain__need">Une enquête doit être menée sur le terrain, avec des données fiables.</p>
+              </div>
+              <div class="domain__body">
+                <p>Conception des questionnaires sur KoboToolbox, déploiement sur mobile avec KoboCollect, administration des questionnaires et contrôle de la qualité des données, puis analyse et rapports sous Excel et Power BI. Depuis mars 2026, je forme des équipes à ces outils.</p>
+                <ol class="flow" aria-label="Étapes d'une collecte de données, dans l'ordre">
+                  <li>Questionnaire</li><li>Collecte mobile</li><li>Contrôle qualité</li><li>Analyse et rapport</li>
+                </ol>
+                <div class="skills"><p class="skills__label">Outils</p><ul class="tags"><li>KoboToolbox</li><li>KoboCollect</li><li>Excel</li><li>Power BI</li><li>Access</li></ul></div>
+              </div>
+            </article>
+          </div>
+
+          <h3 class="sub-heading">Expertises complémentaires</h3>
+          <div class="extras">
+            <article class="extra">
+              <h4>Formation et accompagnement</h4>
+              <p>Formation d'adultes en informatique bureautique et en collecte de données mobile.</p>
+              <ul class="tags tags--small"><li>Bureautique</li><li>KoboToolbox</li><li>KoboCollect</li></ul>
+            </article>
+            <article class="extra">
+              <h4>Maintenance informatique</h4>
+              <p>Dépannage des équipements informatiques, une mission exercée chez DAK-VISION PLUS comme assistant développeur web et maintenance.</p>
+              <ul class="tags tags--small"><li>Dépannage</li></ul>
+            </article>
+            <article class="extra">
+              <h4>Vidéosurveillance</h4>
+              <p>Installation de caméras de vidéosurveillance pour sécuriser des locaux.</p>
+              <ul class="tags tags--small"><li>Installation de caméras</li></ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ PROJETS PERSONNELS ═══ Un projet = un <article class="project project--nom">.
+         · Statut : <p class="project__status"> (pastille status-dot--progress : en cours).
+         · Avancement : <ol class="stages">. Étape finie : class="is-done" et « (terminé) » ;
+           étape en cours : class="is-current" aria-current="step" et « (prochaine étape) » ;
+           étape future : <li> sans classe. Ne marquer « terminé » que ce qui l'est vraiment.
+         · Les couleurs propres à chaque projet sont dans style.css (rubrique Projets). -->
+    <section class="section section--projects" id="projets" aria-labelledby="projets-titre">
+      <div class="page section__grid">
+        <span class="section__mark" aria-hidden="true"></span>
+        <h2 class="section__title" id="projets-titre">Projets</h2>
+        <div class="section__content">
+          <p class="lede">Trois projets personnels, à des stades différents. Les fonctionnalités et l'avancement sont ceux de leur code source : aucun n'est encore publié.</p>
+        </div>
+      </div>
+
+      <div class="page projects">
+        <!-- DJAOU -->
+        <article class="project project--djaou" aria-labelledby="djaou-titre">
+          <div class="project__mark project__mark--phone">
+            <div class="phone">
+              <picture>
+                <source type="image/webp" srcset="assets/images/projets/djaou-ecran.webp">
+                <img src="assets/images/projets/djaou-ecran.jpg" width="360" height="779" loading="lazy" decoding="async" alt="Interface client de DJAOU sur téléphone : « Où allez-vous ? », bouton « Commander une course » et dernières courses avec leur prix (données de démonstration).">
+              </picture>
+            </div>
+          </div>
+          <div class="project__info">
+            <p class="project__status"><span class="status-dot status-dot--progress" aria-hidden="true"></span>En développement</p>
+            <h3 class="project__name" id="djaou-titre">DJAOU</h3>
+            <p class="project__desc">Une plateforme de moto-taxi pour N'Djaména : le client demande une course, le prix lui est annoncé avant le départ et le conducteur le plus proche la reçoit. « Djaou » signifie « allons » en ngambay.</p>
+
+            <dl class="case case--key">
+              <div><dt>Technologies</dt><dd>Laravel 12, MySQL 8, Laravel Sanctum, Laravel Reverb (temps réel), OSRM (calcul des distances), Blade, Tailwind CSS, Alpine.js, passerelle SMS Android</dd></div>
+              <div><dt>Mon rôle</dt><dd>Porteur du projet : cahier des charges, conception et développement</dd></div>
+            </dl>
+
+            <ol class="stages" aria-label="Avancement de DJAOU">
+              <li class="is-done">Cahier des charges<span class="visually-hidden"> (terminé)</span></li>
+              <li class="is-done">Socle et administration<span class="visually-hidden"> (terminé)</span></li>
+              <li class="is-done">Courses web et SMS<span class="visually-hidden"> (terminé)</span></li>
+              <li class="is-current" aria-current="step">Suivi GPS<span class="visually-hidden"> (prochaine étape)</span></li>
+              <li>Phase pilote</li>
+              <li>Application mobile</li>
+            </ol>
+
+            <details class="project__more">
+              <summary>Voir les fonctionnalités et le détail</summary>
+              <dl class="case">
+                <div><dt>Le besoin</dt><dd>Tout le monde n'a pas un smartphone ni une bonne connexion. Le service doit fonctionner avec ce que chacun a : d'abord le site web et les SMS, puis une application mobile.</dd></div>
+                <div><dt>La vision</dt><dd>Un même moteur de prix et de courses pour tous les canaux (web, SMS, puis application, USSD, voix et WhatsApp), et à terme la livraison et d'autres villes.</dd></div>
+                <div class="case__wide"><dt>Fonctionnalités développées</dt><dd>
+                <div class="case__cols">
+                  <div><p class="case__sub">Clients</p><ul class="case__list"><li>Inscription vérifiée par code SMS</li><li>Devis avant départ (distance et prix)</li><li>Suivi, paiement, reçu et note du conducteur</li><li>Commande par SMS</li></ul></div>
+                  <div><p class="case__sub">Conducteurs</p><ul class="case__list"><li>Inscription avec documents stockés chiffrés</li><li>Disponibilité et envoi de la position</li><li>Acceptation, démarrage et fin de course</li><li>Confirmation du paiement</li></ul></div>
+                  <div><p class="case__sub">Administration</p><ul class="case__list"><li>Validation et suspension des comptes</li><li>Tarifs par paliers de kilomètres</li><li>Villes, zones et repères connus</li><li>Paiements, export CSV, statistiques, journal d'audit</li></ul></div>
+                </div>
+              </dd></div>
+                <div><dt>Qualité et sécurité</dt><dd>368 tests automatisés (PHPUnit), double authentification des administrateurs par SMS, documents chiffrés, journal des actions sensibles</dd></div>
+                <div><dt>Prochaines étapes</dt><dd>Suivi GPS des motos (Traccar), phase pilote avec 15 à 20 conducteurs, application Android, paiement par Airtel Money et Moov Money</dd></div>
+              </dl>
+            </details>
+          </div>
+        </article>
+
+        <!-- JANJAN -->
+        <article class="project project--janjan" aria-labelledby="janjan-titre">
+          <div class="project__mark project__mark--phone">
+            <div class="phone">
+              <picture>
+                <source type="image/webp" srcset="assets/images/projets/janjan-ecran.webp">
+                <img src="assets/images/projets/janjan-ecran.jpg" width="360" height="800" loading="lazy" decoding="async" alt="Écran de démarrage de JANJAN : icône de portefeuille, slogan « Petit à petit, j'avance. » et mention « Conçu et développé par ADJIM INNOV ».">
+              </picture>
+            </div>
+          </div>
+          <div class="project__info">
+            <p class="project__status"><span class="status-dot status-dot--progress" aria-hidden="true"></span>En finalisation</p>
+            <h3 class="project__name" id="janjan-titre">JANJAN</h3>
+            <p class="project__desc">Une application Android de gestion des finances personnelles en FCFA et d'organisation du quotidien, qui fonctionne entièrement hors ligne. Sa signature : « Petit à petit, j'avance. »</p>
+
+            <dl class="case case--key">
+              <div><dt>Technologies</dt><dd>Kotlin, Jetpack Compose, Material 3, Room avec chiffrement SQLCipher, architecture MVVM, WorkManager. Android 8 et versions suivantes.</dd></div>
+              <div><dt>Mon rôle</dt><dd>Conception et développement, sous la marque ADJIM INNOV</dd></div>
+            </dl>
+
+            <ol class="stages" aria-label="Avancement de JANJAN">
+              <li class="is-done">Conception<span class="visually-hidden"> (terminé)</span></li>
+              <li class="is-done">Développement<span class="visually-hidden"> (terminé)</span></li>
+              <li class="is-done">Tests<span class="visually-hidden"> (terminé)</span></li>
+              <li class="is-current" aria-current="step">Version signée<span class="visually-hidden"> (en cours)</span></li>
+              <li>Publication</li>
+            </ol>
+
+            <details class="project__more">
+              <summary>Voir les fonctionnalités et le détail</summary>
+              <dl class="case">
+                <div><dt>Le besoin</dt><dd>Suivre son argent et organiser son quotidien sans connexion Internet, sans compte en ligne et sans exposer ses données.</dd></div>
+                <div><dt>Hors ligne et confidentialité</dt><dd>Aucune permission Internet : l'application fonctionne en mode avion. Base de données chiffrée, code PIN, biométrie et sauvegarde chiffrée dans un fichier portable.</dd></div>
+                <div class="case__wide"><dt>Fonctionnalités opérationnelles</dt><dd>
+                <div class="case__cols">
+                  <div><p class="case__sub">Finances</p><ul class="case__list"><li>Portefeuilles (espèces, Mobile Money, banque…)</li><li>Revenus, dépenses et transferts</li><li>Budgets avec alertes à 75, 90 et 100 %</li><li>Épargne par objectifs, dettes et créances</li></ul></div>
+                  <div><p class="case__sub">Suivi</p><ul class="case__list"><li>Tableau de bord et statistiques</li><li>Export CSV et PDF</li><li>Notifications et bilans périodiques</li></ul></div>
+                  <div><p class="case__sub">Planning</p><ul class="case__list"><li>Agenda jour, semaine et mois</li><li>Activités récurrentes et tâches</li><li>Rappels et échéances financières</li></ul></div>
+                </div>
+                <span class="case__note">Fonctionnalités vérifiées sur téléphone ; l'application n'est pas encore publiée.</span>
+              </dd></div>
+                <div><dt>Qualité</dt><dd>123 tests unitaires et 34 tests instrumentés sur Android, réussis lors de la dernière série du 12 novembre 2026 (intégrité des soldes, sauvegarde et restauration, migration, absence d'accès Internet)</dd></div>
+                <div><dt>Reste à faire</dt><dd>Version signée de l'application et guides d'installation et de sauvegarde</dd></div>
+              </dl>
+            </details>
+          </div>
+        </article>
+
+        <!-- ADJIM INNOV -->
+        <article class="project project--adjim" aria-labelledby="adjim-titre">
+          <div class="project__mark">
+            <picture>
+              <source type="image/webp" srcset="assets/images/projets/adjim-innov.webp">
+              <img src="assets/images/projets/adjim-innov.jpg" width="715" height="593" loading="lazy" decoding="async" alt="Logo de ADJIM INNOV">
+            </picture>
+          </div>
+          <div class="project__info">
+            <p class="project__status"><span class="status-dot status-dot--setup" aria-hidden="true"></span>En structuration</p>
+            <h3 class="project__name" id="adjim-titre">ADJIM INNOV</h3>
+            <p class="project__desc">Mon initiative entrepreneuriale de services informatiques et de solutions numériques. Sa signature : « Connectons nos idées au futur ».</p>
+
+            <dl class="case case--key">
+              <div><dt>Domaines d'intervention</dt><dd>Applications et sites web, outils de gestion, collecte de données, formation, maintenance informatique, vidéosurveillance. Le détail figure dans <a href="#services">mes services</a>.</dd></div>
+              <div><dt>Mon rôle</dt><dd>Fondateur de l'initiative</dd></div>
+            </dl>
+
+            <ol class="stages" aria-label="Avancement de ADJIM INNOV">
+              <li class="is-done">Idée<span class="visually-hidden"> (terminé)</span></li>
+              <li class="is-current" aria-current="step">Structuration<span class="visually-hidden"> (en cours)</span></li>
+              <li>Lancement commercial</li>
+            </ol>
+
+            <details class="project__more">
+              <summary>Voir la vision et les réalisations</summary>
+              <dl class="case">
+                <div><dt>La vision</dt><dd>Rassembler sous une même marque le développement de solutions numériques et les services informatiques de terrain.</dd></div>
+                <div><dt>Réalisation sous la marque</dt><dd>L'application JANJAN, en finalisation, signée « Conçu et développé par ADJIM INNOV »</dd></div>
+              </dl>
+            </details>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ═══ RÉALISATIONS ═══ D'abord la plateforme interne (li.work--app), puis « Sites en ligne ».
+         Ajouter un site : copier un <li class="work"> de <ul class="works works--sites">,
+         puis changer textes, lien et captures (même nom en 720 et 1200 px, en .webp et .jpg).
+         Modèle dans MAINTENANCE.md. -->
+    <section class="section" id="realisations" aria-labelledby="realisations-titre">
+      <div class="page section__grid">
+        <span class="section__mark" aria-hidden="true"></span>
+        <h2 class="section__title" id="realisations-titre">Réalisations</h2>
+        <div class="section__content">
+          <p class="lede">Une application métier et des sites en ligne réalisés au sein de DAK-VISION PLUS. Ma contribution est indiquée pour chacun.</p>
+          <ul class="works">
+            <li class="work work--app">
+              <div class="work__head">
+                <picture class="work__shot">
+                  <source type="image/webp" srcset="assets/images/realisations/dakvision-sessions-720.webp 720w, assets/images/realisations/dakvision-sessions-1200.webp 1200w" sizes="(max-width: 820px) 92vw, 62vw">
+                  <img src="assets/images/realisations/dakvision-sessions-1200.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Écran « Sessions de formation » de la plateforme de gestion interne : filtres par statut, sessions à valider par le chargé de programme, formateurs, salles et périodes.">
+                </picture>
+                <h3 class="work__name">Plateforme de gestion interne de DAK-VISION PLUS</h3>
+                <p class="work__type">Application web métier (Laravel), installable sur ordinateur et téléphone</p>
+              </div>
+              <div class="work__gallery">
+                <figure class="work__thumb">
+                  <picture>
+                    <source type="image/webp" srcset="assets/images/realisations/dakvision-tableau-de-bord-720.webp">
+                    <img src="assets/images/realisations/dakvision-tableau-de-bord-720.jpg" width="720" height="480" loading="lazy" decoding="async" alt="Tableau de bord de la direction : éléments à traiter, pointage du jour, présences, rapports hebdomadaires, formations et finances.">
+                  </picture>
+                  <figcaption>Tableau de bord</figcaption>
+                </figure>
+                <figure class="work__thumb">
+                  <picture>
+                    <source type="image/webp" srcset="assets/images/realisations/dakvision-caisse-720.webp">
+                    <img src="assets/images/realisations/dakvision-caisse-720.jpg" width="720" height="480" loading="lazy" decoding="async" alt="Écran Caisse : soldes à encaisser par apprenant et par formation, montants payés et restants en FCFA. Données fictives, numéros de téléphone masqués.">
+                  </picture>
+                  <figcaption>Caisse des formations</figcaption>
+                </figure>
+                <figure class="work__thumb">
+                  <picture>
+                    <source type="image/webp" srcset="assets/images/realisations/dakvision-personnel-720.webp">
+                    <img src="assets/images/realisations/dakvision-personnel-720.jpg" width="720" height="480" loading="lazy" decoding="async" alt="Écran Fiches du personnel : recherche, filtres par service et contrat, liste des employés avec leur matricule.">
+                  </picture>
+                  <figcaption>Fiches du personnel</figcaption>
+                </figure>
+              </div>
+              <p class="work__demo">Captures réalisées sur une installation de test, avec des données fictives ; numéros de téléphone masqués.</p>
+              <dl class="work__facts work__facts--key">
+                <div><dt>Objectif</dt><dd>Réunir dans un seul outil le personnel et les contrats, les présences, les rapports d'activité, les formations et les apprenants, les finances, les salaires et les documents administratifs de l'agence.</dd></div>
+                <div class="work__contribution"><dt>Ma contribution</dt><dd>Conçue et développée seul. Présentée avec l'accord de DAK-VISION PLUS ; outil interne, non accessible au public.</dd></div>
+              </dl>
+              <details class="project__more work__more">
+                <summary>Voir les fonctionnalités, les technologies et la sécurité</summary>
+                <dl class="work__facts">
+                  <div><dt>Fonctionnalités</dt><dd>Pointage depuis le réseau du bureau ; rapports hebdomadaires modifiables 12 h après leur remise puis verrouillés, avec versions archivées et rectifications approuvées ; sessions de formation validées entre le chargé de programme et la direction ; caisse (espèces, Airtel Money, Moov Money) avec reçus et attestations ; finances à soldes jamais négatifs et clôture mensuelle ; bulletins de paie ; contrats, fiches et bilans en PDF ; tableau de bord par rôle.</dd></div>
+                  <div><dt>Technologies et qualité</dt><dd>Laravel 12 en architecture modulaire, MySQL 8, Blade, Tailwind CSS 4, Vite, Laravel Fortify et Sanctum, rôles et permissions Spatie, PDF avec DomPDF, application installable (PWA). 448 tests automatisés (PHPUnit).</dd></div>
+                  <div><dt>Sécurité</dt><dd>Double authentification obligatoire pour la direction, en-têtes de sécurité, connexions limitées, journal de sécurité non modifiable, données salariales chiffrées, aucune suppression : annulation avec motif ou archivage.</dd></div>
+                </dl>
+              </details>
+            </li>
+          </ul>
+          <h3 class="sub-heading works__title">Sites en ligne</h3>
+          <ul class="works works--sites">
+            <li class="work">
+              <a class="work__link" href="https://serviceagroalmountas.com" target="_blank" rel="noopener noreferrer">
+                <picture class="work__shot">
+                  <source type="image/webp" srcset="assets/images/realisations/serviceagroalmountas-720.webp 720w, assets/images/realisations/serviceagroalmountas-1200.webp 1200w" sizes="(max-width: 820px) 92vw, 62vw">
+                  <img src="assets/images/realisations/serviceagroalmountas-1200.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Page d'accueil du site Service Agro Almountas : « Transformez votre agriculture avec l'énergie du soleil ! »">
+                </picture>
+                <span class="work__name">Service Agro Almountas<span class="visually-hidden"> (ouvrir le site dans un nouvel onglet)</span></span>
+                <span class="work__type">Site vitrine (WordPress)</span>
+              </a>
+              <dl class="work__facts work__facts--key">
+                <div class="work__contribution"><dt>Ma contribution</dt><dd>Développement du site et apport des correctifs, dans le cadre de DAK-VISION PLUS.</dd></div>
+              </dl>
+              <details class="project__more work__more">
+                <summary>Voir l'objectif, le contenu et les technologies</summary>
+                <dl class="work__facts">
+                  <div><dt>Objectif</dt><dd>Présenter la vente de matériel et de produits agricoles, les pompes solaires pour l'irrigation et le conseil technique aux projets agricoles, et recevoir des demandes.</dd></div>
+                  <div><dt>Contenu du site</dt><dd>Pages À propos, Services, Galerie, Blog et Contact avec formulaire de demande.</dd></div>
+                  <div><dt>Technologies</dt><dd>WordPress, Elementor</dd></div>
+                </dl>
+              </details>
+            </li>
+            <li class="work">
+              <a class="work__link" href="https://dakvisionplus.com" target="_blank" rel="noopener noreferrer">
+                <picture class="work__shot">
+                  <source type="image/webp" srcset="assets/images/realisations/dakvisionplus-720.webp 720w, assets/images/realisations/dakvisionplus-1200.webp 1200w" sizes="(max-width: 820px) 92vw, 62vw">
+                  <img src="assets/images/realisations/dakvisionplus-1200.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Page d'accueil du site de l'agence DAK-VISION PLUS : « Agence digital et technologique »">
+                </picture>
+                <span class="work__name">DAK-VISION PLUS<span class="visually-hidden"> (ouvrir le site dans un nouvel onglet)</span></span>
+                <span class="work__type">Site vitrine (WordPress)</span>
+              </a>
+              <dl class="work__facts work__facts--key">
+                <div class="work__contribution"><dt>Ma contribution</dt><dd>Développement du site de l'agence où je travaille et apport des correctifs. J'y figure dans la présentation de l'équipe.</dd></div>
+              </dl>
+              <details class="project__more work__more">
+                <summary>Voir l'objectif, le contenu et les technologies</summary>
+                <dl class="work__facts">
+                  <div><dt>Objectif</dt><dd>Présenter les services de l'agence (développement web et mobile, conception graphique et imprimerie, maintenance, marketing digital, formations) et ses réalisations.</dd></div>
+                  <div><dt>Contenu du site</dt><dd>Services, formations, blog, réalisations, présentation de l'équipe, formulaires de contact et accès WhatsApp.</dd></div>
+                  <div><dt>Technologies</dt><dd>WordPress, Elementor</dd></div>
+                </dl>
+              </details>
+            </li>
+            <li class="work">
+              <a class="work__link" href="https://nourtchadservices.com" target="_blank" rel="noopener noreferrer">
+                <picture class="work__shot">
+                  <source type="image/webp" srcset="assets/images/realisations/nourtchadservices-720.webp 720w, assets/images/realisations/nourtchadservices-1200.webp 1200w" sizes="(max-width: 820px) 92vw, 62vw">
+                  <img src="assets/images/realisations/nourtchadservices-1200.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Page d'accueil du site Nour Tchad Services : « Votre partenaire de confiance pour un avenir durable »">
+                </picture>
+                <span class="work__name">Nour Tchad Services<span class="visually-hidden"> (ouvrir le site dans un nouvel onglet)</span></span>
+                <span class="work__type">Site e-commerce (WordPress)</span>
+              </a>
+              <dl class="work__facts work__facts--key">
+                <div class="work__contribution"><dt>Ma contribution</dt><dd>Développement du site et apport des correctifs, dans le cadre de DAK-VISION PLUS.</dd></div>
+              </dl>
+              <details class="project__more work__more">
+                <summary>Voir l'objectif, le contenu et les technologies</summary>
+                <dl class="work__facts">
+                  <div><dt>Objectif</dt><dd>Présenter les expertises de l'entreprise (immobilier et services, énergie solaire, forage et hydraulique, agriculture et irrigation) et vendre du matériel en ligne.</dd></div>
+                  <div><dt>Contenu du site</dt><dd>Boutique avec panier, commandes et compte client, blog et inscription à la lettre d'information.</dd></div>
+                  <div><dt>Technologies</dt><dd>WordPress, WooCommerce, Elementor</dd></div>
+                </dl>
+              </details>
+            </li>
+            <!-- ▼ AJOUTER UN NOUVEAU SITE ICI : coller le modèle de MAINTENANCE.md juste au-dessus de cette ligne. -->
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ PARCOURS ═══ Une année = <li class="ledger__year"> ; une expérience = <article class="job">.
+         Les années récentes sont visibles ; les plus anciennes sont dans <ol class="ledger ledger--older">,
+         à l'intérieur du bloc replié. La formation suit le sous-titre dont l'identifiant est « formation ». -->
+    <section class="section" id="parcours" aria-labelledby="parcours-titre">
+      <div class="page section__grid">
+        <span class="section__mark" aria-hidden="true"></span>
+        <h2 class="section__title" id="parcours-titre">Parcours</h2>
+        <div class="section__content">
+          <p class="lede">Depuis octobre 2024, une progression au sein de DAK-VISION PLUS, après un stage à l'Université de N'Djamena. Du plus récent au plus ancien.</p>
+
+          <ol class="ledger">
+            <li class="ledger__year">
+              <p class="ledger__label" aria-hidden="true">2026</p>
+              <div class="ledger__jobs">
+                <article class="job">
+                  <h3>Formateur en collecte de données, KoboToolbox et KoboCollect</h3>
+                  <p class="job__meta">DAK-VISION PLUS <span class="job__date">depuis mars 2026</span></p>
+                  <ul>
+                    <li>Formation à la conception de formulaires et au déploiement sur mobile.</li>
+                    <li>Administration des questionnaires et contrôle de la qualité des données.</li>
+                  </ul>
+                </article>
+              </div>
+            </li>
+            <li class="ledger__year">
+              <p class="ledger__label" aria-hidden="true">2025</p>
+              <div class="ledger__jobs">
+                <article class="job">
+                  <h3>Chargé de programme et développement numérique</h3>
+                  <p class="job__meta">DAK-VISION PLUS <span class="job__date">depuis décembre 2025</span></p>
+                  <ul>
+                    <li>Élaboration des programmes de formation de l'agence.</li>
+                    <li>Coordination des projets numériques.</li>
+                    <li>Développement d'applications et de sites web avec Laravel, PHP et WordPress.</li>
+                  </ul>
+                </article>
+                <article class="job">
+                  <h3>Formateur en informatique bureautique</h3>
+                  <p class="job__meta">DAK-VISION PLUS <span class="job__date">juin à juillet 2025</span></p>
+                </article>
+              </div>
+            </li>
+          </ol>
+
+          <details class="project__more more ledger-more">
+  <summary>Voir les expériences précédentes (2024) et mon projet d'enquête</summary>
+  <div class="more__body">
+            <ol class="ledger ledger--older">
+            <li class="ledger__year">
+              <p class="ledger__label" aria-hidden="true">2024</p>
+              <div class="ledger__jobs">
+                <article class="job">
+                  <h3>Assistant développeur web et maintenance</h3>
+                  <p class="job__meta">DAK-VISION PLUS <span class="job__date">octobre 2024 à février 2025</span></p>
+                  <ul>
+                    <li>Création de sites web sur mesure avec Laravel, WordPress, PHP, MySQL, HTML et CSS.</li>
+                    <li>Formulaires, rapports et analyses ; création de supports visuels.</li>
+                    <li>Dépannage des équipements.</li>
+                  </ul>
+                </article>
+                <article class="job">
+                  <h3>Stagiaire, département informatique</h3>
+                  <p class="job__meta">FSEA, Université de N'Djamena <span class="job__date">juillet à septembre 2024</span></p>
+                  <ul>
+                    <li>Collecte des données des enseignants et des départements.</li>
+                    <li>Participation à la conception du site web de la faculté.</li>
+                  </ul>
+                </article>
+              </div>
+            </li>
+          </ol>
+<div class="aside-project">
+            <h3>En parallèle : enquête socioéconomique auprès des ménages</h3>
+            <p>Projet personnel. Conception du questionnaire sur KoboToolbox, collecte avec KoboCollect, puis analyse des données.</p>
+          </div>
+  </div>
+</details>
+
+          <h3 class="sub-heading" id="formation">Formation et langues</h3>
+          <div class="education">
+            <div>
+              <h3 class="minor-title">Formation</h3>
+              <dl class="degrees">
+                <div>
+                  <dt>2022 à 2024</dt>
+                  <dd><strong>Diplôme d'ingénieur des travaux en informatique appliquée (Bac+3)</strong>Université de N'Djamena</dd>
+                </div>
+                <div>
+                  <dt>2020</dt>
+                  <dd><strong>Baccalauréat série C</strong>Lycée scientifique Félix Éboué, N'Djaména</dd>
+                </div>
+              </dl>
+            </div>
+            <div>
+              <h3 class="minor-title">Langues</h3>
+              <dl class="languages">
+                <div><dt>Français</dt><dd>Courant</dd></div>
+                <div><dt>Arabe local</dt><dd>Courant</dd></div>
+                <div><dt>Anglais</dt><dd>Débutant</dd></div>
+                <div><dt>Ngambay, sara, gor</dt><dd>Langues parlées</dd></div>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ SERVICES ═══ Un service = un <li> dans <ul class="offer__list">. -->
+    <section class="section" id="services" aria-labelledby="services-titre">
+      <div class="page section__grid">
+        <span class="section__mark" aria-hidden="true"></span>
+        <h2 class="section__title" id="services-titre">Services</h2>
+        <div class="section__content">
+          <p class="statement">Des applications et des sites pour simplifier la gestion de votre activité, à N'Djaména.</p>
+
+          <div class="offer">
+            <h3 class="minor-title">Solutions numériques</h3>
+            <ul class="offer__list">
+              <li>Applications web</li>
+              <li>Applications mobiles</li>
+              <li>Gestion d'entreprise</li>
+              <li>Gestion scolaire</li>
+              <li>Sites vitrines et e-commerce</li>
+              <li>Bases de données</li>
+              <li>Gestion commerciale et stock</li>
+              <li>Collecte et analyse de données</li>
+            </ul>
+            <h3 class="minor-title offer__second">Services informatiques</h3>
+            <ul class="offer__list">
+              <li>Formation aux outils numériques</li>
+              <li>Maintenance informatique</li>
+              <li>Installation de vidéosurveillance</li>
+            </ul>
+          </div>
+
+
+          <div class="hero__actions offer__actions">
+            <a class="button button--solid" href="#projet" data-need="" data-intent="devis">Demander un devis</a>
+            <a class="button" href="#projet">Discuter d'un projet</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ CONTACT ═══ L'e-mail et le numéro sont écrits ici, dans le pied de page et dans
+         assets/js/script.js (constantes EMAIL et WHATSAPP, utilisées par le formulaire).
+         tools/verifier.py signale toute différence. Besoins proposés : la liste déroulante « f-need » du formulaire. -->
+    <section class="section section--contact" id="contact" aria-labelledby="contact-titre">
+      <div class="page section__grid">
+        <span class="section__mark" aria-hidden="true"></span>
+        <h2 class="section__title" id="contact-titre">Contact</h2>
+        <div class="section__content">
+          <p class="statement">Un site à créer, une enquête à préparer, une équipe à former ou du matériel à sécuriser ? Écrivez-moi.</p>
+
+          <div class="email">
+            <a class="email__link" href="mailto:flaubertallah@gmail.com">flaubertallah@gmail.com</a>
+            <button class="copy-button" type="button" data-copy="flaubertallah@gmail.com" hidden>Copier l'adresse</button>
+            <span class="copy-status visually-hidden" role="status" aria-live="polite"></span>
+          </div>
+
+          <dl class="contact-list">
+            <div>
+              <dt>Téléphone</dt>
+              <dd><a href="tel:+23563459298">+235&nbsp;63&nbsp;45&nbsp;92&nbsp;98</a></dd>
+            </div>
+            <div>
+              <dt>WhatsApp</dt>
+              <dd><a href="https://wa.me/23563459298" target="_blank" rel="noopener noreferrer">Écrire sur WhatsApp<span class="visually-hidden"> (nouvel onglet)</span></a></dd>
+            </div>
+            <div>
+              <dt>GitHub</dt>
+              <dd><a href="https://github.com/motou-98" target="_blank" rel="noopener noreferrer">github.com/motou-98<span class="visually-hidden"> (nouvel onglet)</span></a></dd>
+            </div>
+            <div>
+              <dt>Curriculum vitæ</dt>
+              <dd class="cv-links">
+                <a href="assets/documents/CV_ALLAH-ADJIM_Flaubert.pdf" download>Télécharger en PDF <span class="file-size">(75 ko)</span></a>
+                <a href="assets/documents/CV_ALLAH-ADJIM_Flaubert.docx" download>Télécharger en Word <span class="file-size">(16 ko)</span></a>
+              </dd>
+            </div>
+          </dl>
+
+          <form class="project-form" id="projet" novalidate aria-labelledby="projet-titre">
+            <h3 class="project-form__title" id="projet-titre">Discuter d'un projet</h3>
+            <p class="project-form__intro">Décrivez votre besoin : le message est préparé dans votre messagerie ou sur WhatsApp, et vous l'envoyez vous-même. Aucune donnée n'est enregistrée sur ce site.</p>
+
+            <div class="form-errors" role="alert" hidden></div>
+
+            <div class="field">
+              <label for="f-name">Votre nom</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" maxlength="80" required aria-describedby="f-name-error">
+              <p class="field__error" id="f-name-error" hidden></p>
+            </div>
+
+            <div class="field">
+              <label for="f-need">Votre besoin</label>
+              <select id="f-need" name="need" required aria-describedby="f-need-error">
+                <option value="">Choisir un besoin</option>
+                <option value="site">Site vitrine ou boutique en ligne</option>
+                <option value="application">Application web ou mobile</option>
+                <option value="gestion">Logiciel de gestion</option>
+                <option value="donnees">Collecte et analyse de données</option>
+                <option value="formation">Formation aux outils numériques</option>
+                <option value="maintenance">Maintenance ou vidéosurveillance</option>
+                <option value="autre">Autre besoin</option>
+              </select>
+              <p class="field__error" id="f-need-error" hidden></p>
+            </div>
+
+            <div class="field">
+              <label for="f-message">Votre message <span class="field__hint">(au moins 20 caractères)</span></label>
+              <textarea id="f-message" name="message" rows="5" minlength="20" maxlength="1500" required aria-describedby="f-message-error f-message-count"></textarea>
+              <p class="field__count" id="f-message-count" aria-live="polite">0 / 1500</p>
+              <p class="field__error" id="f-message-error" hidden></p>
+            </div>
+
+            <div class="project-form__actions">
+              <button class="button button--solid" type="submit" name="channel" value="email">Préparer l'e-mail</button>
+              <button class="button" type="submit" name="channel" value="whatsapp">Préparer le message WhatsApp</button>
+            </div>
+            <p class="form-status visually-hidden" role="status" aria-live="polite"></p>
+            <div class="form-result" tabindex="-1" hidden>
+              <p class="form-result__title">Votre message est prêt.</p>
+              <p class="form-result__text" data-channel="email">Votre messagerie devrait s'ouvrir avec le message. Si rien ne s'ouvre, c'est qu'aucune application de messagerie n'est configurée sur cet appareil : ouvrez le message dans Gmail, ou copiez-le et envoyez-le à <a href="mailto:flaubertallah@gmail.com">flaubertallah@gmail.com</a>.</p>
+              <p class="form-result__text" data-channel="whatsapp" hidden>WhatsApp s'ouvre dans un nouvel onglet avec votre message, qui ne part que lorsque vous appuyez sur Envoyer. Si l'onglet ne s'est pas ouvert, utilisez le bouton ci-dessous ou copiez le message.</p>
+              <div class="form-result__actions">
+                <a class="button form-result__gmail" data-channel="email" href="https://mail.google.com/" target="_blank" rel="noopener noreferrer">Ouvrir dans Gmail<span class="visually-hidden"> (nouvel onglet)</span></a>
+                <a class="button form-result__wa" data-channel="whatsapp" href="https://wa.me/23563459298" target="_blank" rel="noopener noreferrer" hidden>Ouvrir WhatsApp<span class="visually-hidden"> (nouvel onglet)</span></a>
+                <button class="button form-result__copy" type="button">Copier le message</button>
+              </div>
+              <p class="form-result__copied" role="status" aria-live="polite"></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ═══ PIED DE PAGE ═══ Plan du site, coordonnées et CV : mêmes valeurs que la section Contact. -->
+  <footer class="site-footer">
+    <div class="page site-footer__inner">
+      <div class="site-footer__id">
+        <p class="site-footer__name">Allah-adjim Flaubert</p>
+        <p class="site-footer__role">Chargé de programme et développement numérique</p>
+        <p class="site-footer__place">N'Djaména, Tchad</p>
+      </div>
+      <div class="site-footer__cols">
+        <nav class="site-footer__col" aria-labelledby="footer-plan">
+          <h2 class="site-footer__heading" id="footer-plan">Plan du site</h2>
+          <ul class="site-footer__plan">
+            <li><a href="#profil">Profil</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#realisations">Réalisations</a></li>
+            <li><a href="#parcours">Parcours</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="site-footer__col">
+          <h2 class="site-footer__heading">Me joindre</h2>
+          <ul>
+            <li><a href="mailto:flaubertallah@gmail.com">flaubertallah@gmail.com</a></li>
+            <li><a href="tel:+23563459298">+235&nbsp;63&nbsp;45&nbsp;92&nbsp;98</a></li>
+            <li><a href="https://wa.me/23563459298" target="_blank" rel="noopener noreferrer">WhatsApp<span class="visually-hidden"> (nouvel onglet)</span></a></li>
+            <li><a href="https://github.com/motou-98" target="_blank" rel="noopener noreferrer">GitHub<span class="visually-hidden"> (nouvel onglet)</span></a></li>
+          </ul>
+        </div>
+        <div class="site-footer__col">
+          <h2 class="site-footer__heading">Curriculum vitæ</h2>
+          <ul>
+            <li><a href="assets/documents/CV_ALLAH-ADJIM_Flaubert.pdf" download>Version PDF <span class="file-size">(75 ko)</span></a></li>
+            <li><a href="assets/documents/CV_ALLAH-ADJIM_Flaubert.docx" download>Version Word <span class="file-size">(16 ko)</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <p>© <span class="js-year">2026</span> Allah-adjim Flaubert. Site conçu en HTML, CSS et JavaScript.</p>
+        <a class="site-footer__top" href="#accueil">Revenir en haut</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,11 @@
+# Fichiers à ne pas publier avec le site (Git et GitHub Desktop en tiennent compte,
+# pas l'envoi par glisser-déposer sur github.com).
+Claude outputs/
+Thumbs.db
+desktop.ini
+.DS_Store
+
+#Documentation de travail : décrit le code interne de DAK-VISION PLUS et des
+#défauts de sites clients. Recommandé : retirer le « # » de la ligne suivante
+# pour la garder sur ton ordinateur sans la publier.
+documentation/
