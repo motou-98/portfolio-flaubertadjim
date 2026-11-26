@@ -22,6 +22,7 @@ Ce guide explique comment modifier le site sans rien casser. Le site est fait de
 | `sitemap.xml`, `robots.txt`, `site.webmanifest` | Référencement et installation sur téléphone |
 | `tools/verifier.py` | Vérification avant publication |
 | `tools/images.py` | Préparation des captures d'écran |
+| `googlec9043d34cc53f428.html` | Preuve de propriété pour Google Search Console : **ne pas supprimer ni renommer**, sinon la validation est perdue |
 
 Pour trouver un texte dans `index.html` : ouvre-le dans VS Code et cherche avec **Ctrl+F** la phrase visible sur le site.
 
