@@ -15,11 +15,11 @@ Site statique en HTML, CSS et JavaScript, sans framework ni dépendance externe,
 | Section | Rôle |
 | --- | --- |
 | Accueil | Accroche, poste actuel, boutons « Découvrir mes projets » et « Discuter d'un projet », lien vers le CV, trois piliers |
-| Profil | Parcours, profil hybride, informations clés |
+| Profil | Présentation à la première personne : positionnement, domaines d'intervention, manière de travailler ; parcours détaillé et informations clés |
 | Compétences | 3 domaines principaux (développement, gestion de projets, données) et expertises complémentaires (formation, maintenance, vidéosurveillance) |
-| Projets | DJAOU (moto-taxi, Laravel), JANJAN (Android, Kotlin), ADJIM INNOV, en études de cas tirées de leur code, avec suivi d'avancement |
+| Projets | DJAOU (mobilité, Laravel), JANJAN (Android, Kotlin), ADJIM INNOV : pour chacun le besoin, mon intervention, les technologies, les fonctionnalités et l'état d'avancement, tirés de leur code |
 | Réalisations | Plateforme de gestion interne de DAK-VISION PLUS et 3 sites en ligne : objectif, contenu, technologies, contribution |
-| Parcours | Expériences par année, formation et langues |
+| Parcours | Expériences par année, décrites avec des verbes d'action (présent pour les postes actuels, passé pour les autres), formation et langues |
 | Services | Solutions numériques et services informatiques |
 | Contact | Coordonnées directes et formulaire « Discuter d'un projet » |
 
@@ -45,7 +45,7 @@ assets/
   images/               portrait (340 à 663 px, webp et jpg), icônes, image de partage
   images/projets/       logos, écrans de DJAOU et de JANJAN
   images/realisations/  captures des sites et de la plateforme interne (données fictives)
-  documents/            CV en PDF et en Word
+  documents/            CV d'une page A4, en PDF et en Word (même contenu que le site, en version courte)
 tests/run_tests.py      suite de tests automatisés (Playwright)
 tools/verifier.py       vérification avant publication (Python seul, sans installation)
 tools/images.py         préparation des captures d'écran (Pillow)
@@ -94,6 +94,11 @@ Le dossier `documentation/` reste sur l'ordinateur de l'auteur : il est exclu du
 | [07-ameliorations-futures.md](documentation/07-ameliorations-futures.md) | Pistes recommandées |
 | [08-analyse-des-depots.md](documentation/08-analyse-des-depots.md) | Faits tirés des dépôts DJAOU, JANJAN et dakvision |
 | [09-rapport-de-validation.md](documentation/09-rapport-de-validation.md) | Rapport de validation avant publication : bloquants, importants, facultatifs |
+| [10-optimisation-cv-et-textes.md](documentation/10-optimisation-cv-et-textes.md) | CV d'une page et réécriture des textes du portfolio |
+
+## CV
+
+`assets/documents/CV_ALLAH-ADJIM_Flaubert.pdf` et `.docx` : une page A4, texte en 11 pt, une seule colonne lisible par les logiciels de recrutement. Pour le modifier : ouvrir le fichier Word, enregistrer, exporter en PDF sous le même nom, puis lancer `python tools/verifier.py --corriger` (tailles affichées sur le site). Vérifier que le PDF reste sur une page.
 
 ## Règles de contenu
 
