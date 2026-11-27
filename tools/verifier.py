@@ -366,25 +366,37 @@ def controler_donnees(r, analyses, corriger, index):
     except ValueError as exc:
         r.erreur("site.webmanifest invalide (" + str(exc) + ")")
 
-    # Dates de dernière modification : sitemap.xml et "dateModified" (données pour Google).
-    modif = datetime.date.fromtimestamp(os.path.getmtime(os.path.join(RACINE, "index.html")))
-    cibles = [("sitemap.xml", r"<lastmod>([\d-]+)</lastmod>", "<lastmod>%s</lastmod>"),
-              ("index.html", r'"dateModified": "([\d-]+)"', '"dateModified": "%s"')]
-    for fichier, motif, gabarit in cibles:
+    # Dates de dernière modification : sitemap.xml (date seule) et "dateModified" des données
+    # pour Google, qui exige une date avec l'heure et le fuseau horaire (2026-11-27T08:45:00+01:00).
+    horodatage = datetime.datetime.fromtimestamp(os.path.getmtime(os.path.join(RACINE, "index.html"))).astimezone()
+    modif = horodatage.date()
+    cibles = [("sitemap.xml", r"<lastmod>([^<]+)</lastmod>", "<lastmod>%s</lastmod>", modif.isoformat()),
+              ("index.html", r'"dateModified": "([^"]+)"', '"dateModified": "%s"',
+               horodatage.replace(microsecond=0).isoformat())]
+    for fichier, motif, gabarit, valeur in cibles:
         texte = lire(fichier)
         m = re.search(motif, texte)
         if not m:
             r.alerte(fichier + " : date de modification absente")
             continue
-        date = datetime.date.fromisoformat(m.group(1))
         nom = "sitemap.xml (lastmod)" if fichier == "sitemap.xml" else "index.html (dateModified)"
-        if date >= modif:
-            r.ok("%s : date à jour (%s)" % (nom, date))
+        brut = m.group(1)
+        format_ok = True
+        if fichier == "index.html" and not re.match(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(:\d{2})?([+-]\d{2}:\d{2}|Z)$", brut):
+            format_ok = False
+        try:
+            date = datetime.date.fromisoformat(brut[:10])
+        except ValueError:
+            date, format_ok = None, False
+        if format_ok and date >= modif:
+            r.ok("%s : date à jour (%s)" % (nom, brut))
         elif corriger:
-            ecrire(fichier, texte.replace(m.group(0), gabarit % modif.isoformat(), 1))
-            r.ok("%s : date mise à jour (%s)" % (nom, modif.isoformat()))
+            ecrire(fichier, texte.replace(m.group(0), gabarit % valeur, 1))
+            r.ok("%s : date mise à jour (%s)" % (nom, valeur))
+        elif not format_ok:
+            r.erreur("%s : « %s » n'est pas au format attendu par Google (date, heure et fuseau, par exemple 2026-11-27T08:45:00+01:00) ; lance --corriger" % (nom, brut))
         else:
-            r.alerte("%s : %s, antérieure à la dernière modification de la page (%s) ; lance --corriger" % (nom, date, modif))
+            r.alerte("%s : %s, antérieure à la dernière modification de la page (%s) ; lance --corriger" % (nom, brut, modif))
 
 
 def controler_dossier(r, index):
